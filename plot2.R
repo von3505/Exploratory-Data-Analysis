@@ -23,7 +23,7 @@ febdata <- subset(data, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
 
 ##format time
 datetime <- paste(as.Date(febdata$Date), febdata$Time)
-febdata$Datetime <- as.POSIXct(datetime)
+febdata$Datetime <- as.POSIXct(datetime) 
 
 # Plot 2
 png("plot2.png",width=480,height=480,units="px",bg="transparent")
