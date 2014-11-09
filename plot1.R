@@ -6,7 +6,7 @@ unzip("./Power.zip", files = NULL, list = FALSE, overwrite = TRUE,
       setTimes = FALSE)
 
 #subset the file
-power <- "./household_power_consumption.txt"
+power <- "./household_power_consumption.txt" 
 data <- read.table(power,
                    header = TRUE,
                    sep = ";",
